@@ -44,13 +44,24 @@ section {
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.portfolio-items .item {
-    flex: 1 1 30%;
-    margin: 10px;
-    background-color: #eee;
-    padding: 20px;
+.item {
+    background-color: #f4f4f4;
+    padding: 15px;
     border-radius: 5px;
+    flex: 1 1 30%;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.item:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    transform: scale(1.03); /* Slightly enlarge the item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.contact div {
     text-align: center;
 }
 .contact-form input, .contact-form textarea {
